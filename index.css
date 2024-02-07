@@ -1,0 +1,109 @@
+/* Variables globales */
+:root {
+    --border-colorr: rgb(114, 37, 68);
+    --color-letras: rgba(234, 125, 169, 1);
+
+  }
+  
+  /* Estilos generales */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .navbar {
+    display: grid;
+    grid-template-columns: auto 1git0fr; /* Primera columna para el logo, segunda columna para los enlaces */
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar__logo img {
+    max-width: 90px; /* Ajusta el tamaño de acuerdo a tu logo */
+
+  }
+  .navbar__links {
+    display: flex;
+    gap: 50px; /* Espacio entre los enlaces */
+        
+  }
+  .navbar__link {
+
+    text-decoration: none;
+    padding: 10px 30px; /* Aumenta el espacio interno */
+    border: 3px solid ; /* Borde transparente */
+    border-color: var(--border-colorr);
+    border-radius: 5px; /* Añade esquinas redondeadas */
+    transition: transform 0s ease; /* Transición para el efecto hover */
+
+  }
+  .navbar__link:hover {
+    transform: translateY(-2px); /* Eleva ligeramente el enlace */
+      
+}
+  
+a {
+color:var(--color-letras)
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); /* Tres filas */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    grid-gap: 10px;
+    padding: 10px;
+    height: 100vh; /* 100% de la altura de la ventana del navegador */
+    
+    left:100%;
+}
+  
+  .item1 {
+    padding: 60px;
+    display: flex;
+    justify-content: left;
+    
+    
+  }
+
+  .img1 {
+    height: 200px;
+    width: 310px;
+    transform: rotate(380deg);
+    
+}
+.item3{
+display: flex;
+justify-content: center;
+
+
+}
+
+.item2{
+    color: var(--color-letras);
+    font-size: 32px;
+    
+    display: flex;
+justify-content: right;
+
+
+}
+.parrafo1{ 
+margin-top: 50px;
+margin-right:100px ;
+transform: rotate(350deg);
+
+}
+
+
+
+.img2{
+height: 400px;
+width:auto;
+transform:rotate(); 
+display: flex;
+margin-top: 10px;
+margin-right: 500px;
+}
+
+/* Rectangle 47 */
+
