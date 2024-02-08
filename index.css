@@ -7,8 +7,10 @@
   
   /* Estilos generales */
   body {
+    
     margin: 0;
     font-family: Arial, sans-serif;
+
   }
   .navbar {
     display: grid;
@@ -17,6 +19,7 @@
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    margin-left: 300px;
   }
   .navbar__logo img {
     max-width: 90px; /* Ajusta el tamaño de acuerdo a tu logo */
@@ -25,7 +28,8 @@
   .navbar__links {
     display: flex;
     gap: 50px; /* Espacio entre los enlaces */
-        
+     justify-content: center;
+     margin-right: 300px;   
   }
   .navbar__link {
 
@@ -53,27 +57,29 @@ color:var(--color-letras)
     grid-gap: 10px;
     padding: 10px;
     height: 100vh; /* 100% de la altura de la ventana del navegador */
-    
-    left:100%;
+    left:100px;
+    margin-top: 50px;
 }
   
   .item1 {
-    padding: 60px;
+    padding: 0px;
     display: flex;
     justify-content: left;
+    margin-top: -50px;
+    margin-left: 150px;
     
     
   }
 
   .img1 {
-    height: 200px;
-    width: 310px;
-    transform: rotate(380deg);
-    
+    height: 60px;
+    width: 100px;
+    transform: rotate(360deg);
 }
 .item3{
 display: flex;
 justify-content: center;
+
 
 
 }
@@ -81,15 +87,14 @@ justify-content: center;
 .item2{
     color: var(--color-letras);
     font-size: 32px;
-    
     display: flex;
-justify-content: right;
+    justify-content: center;
 
 
 }
 .parrafo1{ 
 margin-top: 50px;
-margin-right:100px ;
+margin-right:1px ;
 transform: rotate(350deg);
 
 }
@@ -101,9 +106,68 @@ height: 400px;
 width:auto;
 transform:rotate(); 
 display: flex;
-margin-top: 10px;
-margin-right: 500px;
+margin-right: 100px;
 }
 
 /* Rectangle 47 */
 
+.mediocirculos{
+  height: 70px;
+  width: 70x;
+  display: flex;
+  margin-top: 10px;
+
+}
+
+.mediocirculo1{
+  display: flex;
+  justify-content: center;
+  margin-left:-200px;
+  margin-top: 200px;
+}
+.mediocirculo2{
+display: flex;
+justify-content: top;
+margin-top: 100px;
+}
+
+.corazon{
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
+  height: 300px;
+    width: 200px;
+}
+.Rectangle{
+  height: 350px;
+    width: 350px;
+}
+
+p{
+  color: var(--color-letras);
+  font-size: 35px;
+}
+.item6{
+display: flex;
+justify-content: left;
+margin-left: -170px;
+margin-top: 30px;
+
+}
+.contenido {
+  position: relative;
+  z-index: 1; /* Asegura que el contenido esté encima del fondo */
+}
+
+.contenido::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Rectangle31.png);
+  background-size: cover;
+  transform: translateY(650px); /* Mueve el fondo hacia abajo 50px */
+  z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
+}
