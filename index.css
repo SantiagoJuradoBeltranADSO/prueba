@@ -186,7 +186,7 @@ margin-top: 30px;
   transform: rotate(350deg);
   display: flex;
   margin-left: -1000px;
-  margin-top: -350px;
+  margin-top: -550px;
   position: absolute;
   z-index: -1;
 }
@@ -199,7 +199,7 @@ margin-top: 30px;
   transform: rotate(-350deg);
   display: flex;
   margin-left: -1000px;
-  margin-top: 1600px;
+  margin-top: 1400px;
   position: absolute;
   z-index: -1;
 }
@@ -210,16 +210,16 @@ margin-top: 30px;
 display: flex;
 justify-content: top;
 margin-top: 2100px;
-margin-left: 400px;
+margin-left: 450px;
 position: absolute;
 height: 700px;
 width: 700px;
 }
 .item15{
-  display: flex;
+display: flex;
 justify-content: top;
 margin-top: 3100px;
-margin-left: 400px;
+margin-left: 600px;
 position: absolute;
 height: 700px;
 width: 700px;
@@ -227,11 +227,10 @@ width: 700px;
 
 .item16{
   display: flex;
-  justify-content: top;
+  justify-content: flex-start;
   margin-top: 4000px;
   position: absolute;
-  height: 95px;
-  width: 10px;
+  height: (90px);
   margin-left: -9px;
 }
 @media(max-width:1300px){
@@ -260,7 +259,7 @@ width: 700px;
     margin-left: 10px;
   }
 .item9{
-  margin-left: 10px;
+    margin-left: 10px;
 }
 .item12{
   margin-left: 400px;
@@ -309,48 +308,151 @@ width: 700px;
   width: 10px;
   margin-left: -9px;
 }
-}
+} 
+
 @media (max-width: 400px) {
-  .img1 {
-    max-width: 50px; /* Reducir el tamaño de la imagen 1 */
-    max-height: 30px;
-  }
-  
-  .img2 {
-    width: auto; /* Hacer que la imagen 2 tenga un ancho automático */
-    height: auto; /* Hacer que la imagen 2 tenga una altura automática */
-    max-width: 80%; /* Ajustar el ancho máximo de la imagen 2 al tamaño del contenedor */
-    max-height: 150px; /* Limitar la altura máxima de la imagen 2 */
-  }
 
-  /* Otros ajustes necesarios para mantener el diseño responsivo */
+.navbar {
+    display: grid;
+    grid-template-columns: auto; /* Primera columna para el logo, segunda columna para los enlaces */
+    padding:5px;
+    display: flex;
+    justify-content: space-between;
+    margin-left:30px;
+  }
+  .navbar__logo img {
+    max-width: 70px; /* Ajusta el tamaño de acuerdo a tu logo */
+
+  }
+  .navbar__links {
+    display: flex;
+    gap: 20px; /* Espacio entre los enlaces */
+     margin-right: 5px;   
+  }
+  .navbar__link {
+
+    text-decoration: none;
+    padding: 5px 15px; /* Aumenta el espacio interno */
+    border: 3px solid ; /* Borde transparente */
+    border-color: var(--border-colorr);
+    border-radius: 7px; /* Añade esquinas redondeadas */
+    
+
+  }
+  .navbar__link:hover {
+    transform: translateY(-2px); /* Eleva ligeramente el enlace */
+      
+}
   .grid-container {
-    margin-top: 5px; /* Ajustar el margen superior */
-    grid-gap: 3px; /* Ajustar el espacio entre elementos del grid */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 0;
   }
 
-  .item1,
-  .item2,
-  .item3,
-  .item6,
-  .item8,
-  .item9,
+  .item1 {
+    justify-content: center;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .img1 {
+   display: none;
+  }
+
+.item2{
+    position: absolute;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 220px;
+    
+}
+
+  .parrafo1 {
+    margin-top: 10px;
+    transform: rotate(0);
+    font-size: 22px;
+  }
+
+  .img2 {
+    max-width: 300px; /* Ajustar tamaño máximo de la imagen */
+    height: 300px;
+    display: flex;
+    margin-top: -200px;
+  }
+
+  .mediocirculos {
+   display: none ;
+  }
+
+  .corazon {
+  display: none;
+  }
+
+  .Rectangle {
+    height: auto;
+    width: 100%;
+    
+  }
+
+  .p {
+    display: none;
+  }
+
+.item6 {
+   position: absolute;
+   display: flex;
+   margin-top: 390px;
+   margin-left: 220px;
+   }
+.parrafo2{
+  font-size: 22px;
+}
+  .item7,
+  .imagen3{
+    height: 5px;
+    width: 5px;
+     transform: rotate(0deg);
+  }
+  .item8 {
+    position: relative;
+    margin-top: -10px;
+    display: flex;
+  }
+  .item5{
+   max-width: 200px; /* Ajustar tamaño máximo de la imagen */
+    height: 300px;
+    display: flex;
+   
+    margin-left: -160px;
+    display: flex;
+    
+
+  }
+
+  .item9 {
+    margin-top: 10px;
+    margin-left: 0;
+    transform: rotate(0);
+  }
+
+ .rectangulo{
+  display: flex;
+  margin-top: -2100px;
+
+ }
+ .rectangulo2
+{
+  display: none;
+}
+
   .item10,
   .item11,
-  .item12,
   .item15,
   .item16 {
-    margin-left: 3px; /* Ajustar el margen izquierdo */
-    margin-right: 3px; /* Ajustar el margen derecho */
-  }
-
-  .item16 {
-    display: none; /* Ocultar el elemento con clase item16 */
-  }
-
-  .rectangulo,
-  .rectangulo2 {
-    display: none; /* Ocultar los rectángulos */
+    display: none;
   }
 }
-
