@@ -6,15 +6,17 @@
   }
   
   /* Estilos generales */
-  body {
-    
-    margin: 0;
-    font-family: Arial, sans-serif;
+  body{
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina los rellenos predeterminados */
+    width: 100%; /* Asegura que el cuerpo y el html ocupen todo el ancho disponible */
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
 
-  }
+  
   .navbar {
     display: grid;
-    grid-template-columns: auto 1git0fr; /* Primera columna para el logo, segunda columna para los enlaces */
+    grid-template-columns: auto; /* Primera columna para el logo, segunda columna para los enlaces */
     align-items: center;
     padding: 10px;
     display: flex;
@@ -154,20 +156,201 @@ margin-left: -170px;
 margin-top: 30px;
 
 }
-.contenido {
-  position: relative;
-  z-index: 1; /* Asegura que el contenido esté encima del fondo */
+
+
+.item7{
+display: flex;
+margin-top:90px ;
+}
+.item8{
+display:flex ;
+margin-left:-200px ;
+margin-top: 30px;
 }
 
-.contenido::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(Rectangle31.png);
-  background-size: cover;
-  transform: translateY(650px); /* Mueve el fondo hacia abajo 50px */
-  z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
+.item9{
+  color: var(--border-colorr);
+  font-size: 35px;
+  transform: rotate(-12.05deg);
+  display: flex;
+  margin-top:150px ;
+  margin-left: -200px ;
 }
+
+
+.rectangulo {
+  height: 100px; /* Alto del cuadrado */
+  background-color: rgba(183, 117, 117, 0.14); /* Color negro */
+  height: 900px;
+  width: 7000px;
+  transform: rotate(350deg);
+  display: flex;
+  margin-left: -1000px;
+  margin-top: -350px;
+  position: absolute;
+  z-index: -1;
+}
+
+.rectangulo2{
+  height: 100px; /* Alto del cuadrado */
+  background-color: rgba(183, 117, 117, 0.14); /* Color negro */
+  height: 900px;
+  width: 7000px;
+  transform: rotate(-350deg);
+  display: flex;
+  margin-left: -1000px;
+  margin-top: 1600px;
+  position: absolute;
+  z-index: -1;
+}
+.item10{
+  margin-top: 1100px;
+}
+.item11{
+display: flex;
+justify-content: top;
+margin-top: 2100px;
+margin-left: 400px;
+position: absolute;
+height: 700px;
+width: 700px;
+}
+.item15{
+  display: flex;
+justify-content: top;
+margin-top: 3100px;
+margin-left: 400px;
+position: absolute;
+height: 700px;
+width: 700px;
+}
+
+.item16{
+  display: flex;
+  justify-content: top;
+  margin-top: 4000px;
+  position: absolute;
+  height: 95px;
+  width: 10px;
+  margin-left: -9px;
+}
+@media(max-width:1300px){
+  .rectangulo{
+    display: flex;
+    justify-content: top;
+    margin-top: -1050px;
+  }
+  .mediocirculos{
+    height: 0px;
+    width: 0px;
+  }
+  .corazon{
+    height: 0px;
+    width: 0px;
+  }
+  .navbar {
+    margin-left: 200px;
+  }
+
+  .navbar__links {
+     margin-right: 100px;   
+  }
+
+  .item8{
+    margin-left: 10px;
+  }
+.item9{
+  margin-left: 10px;
+}
+.item12{
+  margin-left: 400px;
+  position: absolute;
+  margin-top: 1580px;
+  margin-left: center;
+}
+.rectangulo2{
+  display: flex;
+ margin-top: 105%;
+}
+
+.img2{
+  display: flex;
+  margin-left: -40px;
+}
+
+.item2{
+  display: flex;
+  margin-left: 50px;
+}
+.item6{
+  display: flex;
+  position: relative;
+  margin-left:0.1%; 
+}
+.item11{
+  max-width: 1000px; /* Ajusta el tamaño máximo de las imágenes */
+  height: 800px; /* Altura automática para mantener la proporción */
+  display: flex;
+  margin-left: -0px;
+  
+}
+.item15{
+  display: flex;
+  margin-left: 200px;
+  max-width: 1000px; /* Ajusta el tamaño máximo de las imágenes */
+  height: 800px;
+}
+.item16{
+  display: flex;
+  justify-content: top;
+  margin-top: 4000px;
+  position: absolute;
+  height: 63px;
+  width: 10px;
+  margin-left: -9px;
+}
+}
+@media (max-width: 400px) {
+  .img1 {
+    max-width: 50px; /* Reducir el tamaño de la imagen 1 */
+    max-height: 30px;
+  }
+  
+  .img2 {
+    width: auto; /* Hacer que la imagen 2 tenga un ancho automático */
+    height: auto; /* Hacer que la imagen 2 tenga una altura automática */
+    max-width: 80%; /* Ajustar el ancho máximo de la imagen 2 al tamaño del contenedor */
+    max-height: 150px; /* Limitar la altura máxima de la imagen 2 */
+  }
+
+  /* Otros ajustes necesarios para mantener el diseño responsivo */
+  .grid-container {
+    margin-top: 5px; /* Ajustar el margen superior */
+    grid-gap: 3px; /* Ajustar el espacio entre elementos del grid */
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item6,
+  .item8,
+  .item9,
+  .item10,
+  .item11,
+  .item12,
+  .item15,
+  .item16 {
+    margin-left: 3px; /* Ajustar el margen izquierdo */
+    margin-right: 3px; /* Ajustar el margen derecho */
+  }
+
+  .item16 {
+    display: none; /* Ocultar el elemento con clase item16 */
+  }
+
+  .rectangulo,
+  .rectangulo2 {
+    display: none; /* Ocultar los rectángulos */
+  }
+}
+
